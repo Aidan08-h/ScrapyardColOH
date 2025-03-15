@@ -19,10 +19,8 @@ class Champion:
         Healer.health += Healer.heal
 
 
-Champion Shaun = Champion("Shaun", 10, 15)
-Champion Aidan = Champion("Aidan", 20, 5)
-
-
+Shaun = Champion("Shaun", 10, 15)
+Aidan = Champion("Aidan", 20, 5)
 
 class OpeningScreen:
 
