@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://mfk0utdah18g"]
+
+[ext_resource type="Texture2D" uid="uid://sa857h3gc4bk" path="res://Assets/Health Bar/five-points-fest-designer-toys-kaiju-street-art-black-bar-l-77d17f44acb6427a.png" id="1_0k7lb"]
+[ext_resource type="Texture2D" uid="uid://jfox1u2tjtxv" path="res://Assets/Health Bar/dark-green-bar-1466.png" id="2_bcsrs"]
+
+[node name="TextureProgressBar" type="TextureProgressBar"]
+offset_left = -560.0
+offset_top = -824.0
+offset_right = 587.0
+offset_bottom = -703.0
+pivot_offset = Vector2(-420, 909)
+step = 10.0
+value = 40.0
+texture_under = ExtResource("1_0k7lb")
+texture_progress = ExtResource("2_bcsrs")
