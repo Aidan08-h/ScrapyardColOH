@@ -24,8 +24,7 @@ func _physics_process(delta: float) -> void:
 		
 	if Input.is_action_pressed("crouch") and is_on_floor():
 		var shape = $CollisionShape2D.shape
-		var size = shape.size
-		shape.set_size(Vector2(size.x, size.y / 2))
+		shape.set_size(Vector2(shape.size.x, shape.size.y / 2))
 		
 
 	move_and_slide()
