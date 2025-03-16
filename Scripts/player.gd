@@ -3,8 +3,8 @@ extends CharacterBody2D
 @onready var animation_player := $AnimationPlayer
 @onready var animated_sprite := $AnimatedSprite2D
 const SPEED = 600.0
-const JUMP_VELOCITY = -400.0
-const gravity =Vector2(0, 1000.0)
+const JUMP_VELOCITY = -2000.0
+const gravity =Vector2(0, 10000.0)
 var health = 100
 var height
 var pos
