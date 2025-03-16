@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crmrv5qiy4f58"
-path="res://.godot/imported/Aidan PNG (no background).png-4067d989cb3eae615768e425bddc18d6.ctex"
+path="res://.godot/imported/Aidan PNG (no background).png-75dbdf89c36a553c8a28fcb869048c24.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Aidan PNG (no background).png"
-dest_files=["res://.godot/imported/Aidan PNG (no background).png-4067d989cb3eae615768e425bddc18d6.ctex"]
+source_file="res://Assets/Aidan Images/Aidan PNG (no background).png"
+dest_files=["res://.godot/imported/Aidan PNG (no background).png-75dbdf89c36a553c8a28fcb869048c24.ctex"]
 
 [params]
 

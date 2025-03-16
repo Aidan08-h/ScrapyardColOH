@@ -1,40 +1,141 @@
-[gd_scene load_steps=15 format=3 uid="uid://dskhkmjlpljku"]
+[gd_scene load_steps=38 format=3 uid="uid://dskhkmjlpljku"]
 
 [ext_resource type="Script" uid="uid://b6g3c222sxiyt" path="res://Scripts/player.gd" id="1_onrkg"]
-[ext_resource type="Texture2D" uid="uid://bi3iao2snkwkf" path="res://Assets/IMG_4799-removebg-preview.png" id="2_fkybt"]
 [ext_resource type="Script" uid="uid://cy5nl84e2heht" path="res://Scripts/hurtBox.gd" id="2_vgqql"]
-[ext_resource type="Texture2D" uid="uid://dny07rs1deonr" path="res://Assets/IMG_4798-removebg-preview.png" id="3_x3wgy"]
+[ext_resource type="Texture2D" uid="uid://b8sixsq1ek2ti" path="res://Assets/Aidan Images/IMG_4818-removebg-preview.png" id="2_wpjfl"]
+[ext_resource type="Texture2D" uid="uid://u8brvdslj7sc" path="res://Assets/Aidan Images/image-removebg-preview.png" id="3_bi64h"]
+[ext_resource type="Texture2D" uid="uid://pli8po4g5dtk" path="res://Assets/Aidan Images/IMG_4815-removebg-preview.png" id="4_2ijsl"]
 [ext_resource type="Script" uid="uid://sqwwj1u26x2c" path="res://Scripts/hitbox.gd" id="4_fkybt"]
-[ext_resource type="Texture2D" uid="uid://crw8wypqr4je0" path="res://Assets/IMG_4796-removebg-preview.png" id="4_x3wgy"]
+[ext_resource type="Texture2D" uid="uid://ctgwc7rla011x" path="res://Assets/Aidan Images/IMG_4816-removebg-preview.png" id="5_p1odr"]
+[ext_resource type="Texture2D" uid="uid://c2nua5p86a0nu" path="res://Assets/Aidan Images/IMG_4817-removebg-preview.png" id="6_0gysh"]
 [ext_resource type="PackedScene" uid="uid://4j4dfrspsljd" path="res://Scenes/Health.tscn" id="7_3smsa"]
+[ext_resource type="Texture2D" uid="uid://bnn0vsicmn4vi" path="res://Assets/Aidan Images/IMG_4820-removebg-preview.png" id="7_vfarp"]
+[ext_resource type="Texture2D" uid="uid://unkhnje2b7tn" path="res://Assets/Shaun Images/IMG_4809-removebg-preview.png" id="8_y6uwr"]
+[ext_resource type="Texture2D" uid="uid://br53lx4hjpw1u" path="res://Assets/Shaun Images/IMG_4810-removebg-preview.png" id="9_83xs0"]
+[ext_resource type="Texture2D" uid="uid://bu4qph156ogfq" path="res://Assets/Shaun Images/IMG_4808-removebg-preview.png" id="10_ypfnu"]
+[ext_resource type="Texture2D" uid="uid://81jeflin7sp6" path="res://Assets/Shaun Images/IMG_4812-removebg-preview.png" id="11_xuaoq"]
+[ext_resource type="Texture2D" uid="uid://pp7jkxqefmcg" path="res://Assets/Shaun Images/IMG_4813-removebg-preview.png" id="12_wohnl"]
+[ext_resource type="Texture2D" uid="uid://d36ffvb2p86fi" path="res://Assets/Shaun Images/IMG_4814-removebg-preview.png" id="13_36dho"]
+[ext_resource type="Texture2D" uid="uid://ci8n5ibosurwq" path="res://Assets/Wendy Images/IMG_4824-removebg-preview.png" id="14_yh6i2"]
+[ext_resource type="Texture2D" uid="uid://cllv5fiopy40" path="res://Assets/Wendy Images/IMG_4825-removebg-preview.png" id="15_nv4vc"]
+[ext_resource type="Texture2D" uid="uid://e1inu201rssk" path="res://Assets/Wendy Images/IMG_4821-removebg-preview.png" id="16_8gxox"]
+[ext_resource type="Texture2D" uid="uid://ct08d4ablh556" path="res://Assets/Wendy Images/IMG_4822-removebg-preview.png" id="17_11gg7"]
+[ext_resource type="Texture2D" uid="uid://52ququp38lqb" path="res://Assets/Wendy Images/IMG_4823-removebg-preview.png" id="18_qpa8y"]
+[ext_resource type="Texture2D" uid="uid://cra1wmv7eohmh" path="res://Assets/Wendy Images/IMG_4826-removebg-preview.png" id="19_sbwqj"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gymyn"]
-radius = 67.0356
-height = 380.0
+radius = 49.0
+height = 290.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hqtel"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_fkybt")
+"texture": ExtResource("2_wpjfl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_x3wgy")
+"texture": ExtResource("3_bi64h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_x3wgy")
+"texture": ExtResource("4_2ijsl")
 }],
 "loop": false,
-"name": &"shaun_attacking_high",
+"name": &"Aidan_attack_high",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_p1odr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_0gysh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2ijsl")
+}],
+"loop": true,
+"name": &"Aidan_attack_low",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_vfarp")
+}],
+"loop": false,
+"name": &"Aidan_crouch",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_y6uwr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_83xs0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ypfnu")
+}],
+"loop": false,
+"name": &"Shaun_attack_high",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_xuaoq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wohnl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ypfnu")
+}],
+"loop": false,
+"name": &"Shuan_attack_low",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_36dho")
+}],
+"loop": false,
+"name": &"Shuan_crouch",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_x3wgy")
+"texture": ExtResource("14_yh6i2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_nv4vc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8gxox")
 }],
 "loop": false,
-"name": &"shaun_standing",
-"speed": 1.0
+"name": &"Wendy_attack_high",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_11gg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_qpa8y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8gxox")
+}],
+"loop": false,
+"name": &"Wendy_attack_low",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_sbwqj")
+}],
+"loop": false,
+"name": &"Wendy_crouch",
+"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3smsa"]
@@ -78,9 +179,21 @@ tracks/2/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Hitbox:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_8erm5"]
-resource_name = "attack_high"
+resource_name = "Shaun_attack_high"
 length = 0.375004
 step = 0.0416667
 tracks/0/type = "value"
@@ -93,7 +206,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.375004),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-26, -203), Vector2(98, -87)]
+"values": [Vector2(-26, -203), Vector2(70, -128)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -119,11 +232,311 @@ tracks/2/keys = {
 "update": 1,
 "values": [true, false]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Hitbox:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.375004),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_3smsa"]
+resource_name = "Shuan_attack_low"
+length = 0.750025
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Hitbox:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(7, -65), Vector2(57, -77)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Hitbox:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-1.05565, -2.38679]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Hitbox:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(2.23385, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Hitbox:monitorable")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_tx1dd"]
+resource_name = "Shuan_crouch"
+length = 0.750025
+step = 0.25
+
+[sub_resource type="Animation" id="Animation_gymyn"]
+resource_name = "Aidan_attack_high"
+length = 0.750025
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Hitbox:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(60, -112), Vector2(139, -81)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Hitbox:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.36471]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Hitbox:monitorable")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Hitbox:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_pu2lt"]
+resource_name = "Aidan_attack_low"
+length = 0.750025
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Hitbox:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(26, -5), Vector2(147, -10)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Hitbox:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Hitbox:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(3.62418, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Hitbox:monitorable")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_ukyrk"]
+resource_name = "Aidan_crouch"
+length = 0.750025
+step = 0.25
+
+[sub_resource type="Animation" id="Animation_7dp3o"]
+resource_name = "Wendy_attack_high"
+length = 0.750025
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Hitbox:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-27, -149), Vector2(46, -93)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Hitbox:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-1.25065, -0.0003016]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Hitbox:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Hitbox:monitorable")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_h4iuc"]
+resource_name = "Wendy_attack_low"
+length = 0.750025
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Hitbox:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2, 16), Vector2(46, -4)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Hitbox:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.81807, -2.3207]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Hitbox:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Hitbox:monitorable")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.750025),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_fd4e3"]
+resource_name = "Wendy_crouch"
+length = 0.750025
+step = 0.25
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tx1dd"]
 _data = {
+&"Aidan_attack_high": SubResource("Animation_gymyn"),
+&"Aidan_attack_low": SubResource("Animation_pu2lt"),
+&"Aidan_crouch": SubResource("Animation_ukyrk"),
 &"RESET": SubResource("Animation_f1ek2"),
-&"attack_high": SubResource("Animation_8erm5")
+&"Shaun_attack_high": SubResource("Animation_8erm5"),
+&"Shuan_attack_low": SubResource("Animation_3smsa"),
+&"Shuan_crouch": SubResource("Animation_tx1dd"),
+&"Wendy_attack_high": SubResource("Animation_7dp3o"),
+&"Wendy_attack_low": SubResource("Animation_h4iuc"),
+&"Wendy_crouch": SubResource("Animation_fd4e3")
 }
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_3smsa"]
@@ -131,19 +544,19 @@ properties/0/path = NodePath(".:position")
 properties/0/spawn = true
 properties/0/replication_mode = 1
 
-[node name="Player_Shaun" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D"]
 collision_layer = 0
 script = ExtResource("1_onrkg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-72, 23)
+position = Vector2(-37, -33)
 shape = SubResource("CapsuleShape2D_gymyn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_hqtel")
-animation = &"shaun_attacking_high"
+animation = &"Wendy_attack_low"
 frame = 1
-frame_progress = 0.573871
+frame_progress = 0.371062
 
 [node name="Hitbox" type="Area2D" parent="." groups=["Hitboxes"]]
 position = Vector2(-26, -203)
@@ -175,7 +588,7 @@ collision_mask = 2
 script = ExtResource("2_vgqql")
 
 [node name="Hurt" type="CollisionShape2D" parent="Hurtbox"]
-position = Vector2(-72, 23)
+position = Vector2(-37, -33)
 shape = SubResource("CapsuleShape2D_gymyn")
 disabled = true
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dacl6iybasqu2"
-path="res://.godot/imported/shuan.png-05da38cb852d73cb0cb7da20e0bb66b9.ctex"
+uid="uid://52ququp38lqb"
+path="res://.godot/imported/IMG_4823-removebg-preview.png-162738339484bd14bd944afae898681e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/shuan.png"
-dest_files=["res://.godot/imported/shuan.png-05da38cb852d73cb0cb7da20e0bb66b9.ctex"]
+source_file="res://Assets/Wendy Images/IMG_4823-removebg-preview.png"
+dest_files=["res://.godot/imported/IMG_4823-removebg-preview.png-162738339484bd14bd944afae898681e.ctex"]
 
 [params]
 

@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://bslthwjceyh71"]
 
-[ext_resource type="Script" uid="uid://dsrl0n27fkpfn" path="res://Scenes/game.gd" id="1_kry3j"]
+[ext_resource type="Script" uid="uid://dsrl0n27fkpfn" path="res://Scripts/game.gd" id="1_kry3j"]
 [ext_resource type="Script" uid="uid://cy5nl84e2heht" path="res://Scripts/hurtBox.gd" id="2_8gbba"]
-[ext_resource type="Texture2D" uid="uid://blsslniujbqfl" path="res://Assets/aidan.png" id="3_jjvhh"]
-[ext_resource type="Texture2D" uid="uid://bm13htpqxbn71" path="res://Assets/unnamed.jpg" id="4_jjvhh"]
+[ext_resource type="Texture2D" uid="uid://blsslniujbqfl" path="res://Assets/Aidan Images/aidan.png" id="3_jjvhh"]
+[ext_resource type="Texture2D" uid="uid://bm13htpqxbn71" path="res://Assets/Background.jpg" id="4_jjvhh"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_7dm0k"]
 distance = -1.0

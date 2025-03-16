@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cu2jmpn14ew8w"
-path="res://.godot/imported/Shaun PNG (no background).png-9fab5ebccef6475d9d6a2bb08e166fba.ctex"
+uid="uid://c2nua5p86a0nu"
+path="res://.godot/imported/IMG_4817-removebg-preview.png-2fdba8d742121311bb7a153dcc66791a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Shaun PNG (no background).png"
-dest_files=["res://.godot/imported/Shaun PNG (no background).png-9fab5ebccef6475d9d6a2bb08e166fba.ctex"]
+source_file="res://Assets/Aidan Images/IMG_4817-removebg-preview.png"
+dest_files=["res://.godot/imported/IMG_4817-removebg-preview.png-2fdba8d742121311bb7a153dcc66791a.ctex"]
 
 [params]
 

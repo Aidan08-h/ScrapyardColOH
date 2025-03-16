@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://dftb0j1hwf0a2"]
 
 [ext_resource type="Script" uid="uid://dgysie5bsw4e0" path="res://Code - Opening Screen/start_scene.gd" id="1_0spq4"]
-[ext_resource type="Texture2D" uid="uid://cu2jmpn14ew8w" path="res://Shaun PNG (no background).png" id="2_crg2s"]
-[ext_resource type="Texture2D" uid="uid://crmrv5qiy4f58" path="res://Aidan PNG (no background).png" id="3_e5juq"]
-[ext_resource type="Texture2D" uid="uid://bk1daiv4bgpvd" path="res://Wendy PNG (no background).png" id="4_a7soe"]
+[ext_resource type="Texture2D" uid="uid://cu2jmpn14ew8w" path="res://Assets/Shaun Images/Shaun PNG (no background).png" id="2_crg2s"]
+[ext_resource type="Texture2D" uid="uid://crmrv5qiy4f58" path="res://Assets/Aidan Images/Aidan PNG (no background).png" id="3_e5juq"]
+[ext_resource type="Texture2D" uid="uid://bk1daiv4bgpvd" path="res://Assets/Wendy Images/Wendy PNG (no background).png" id="4_a7soe"]
 [ext_resource type="AudioStream" uid="uid://d0tg1bn3do40g" path="res://Kyle Preston - The Mystics.mp3" id="5_e5juq"]
 [ext_resource type="Script" uid="uid://0d7k6kgupceh" path="res://Code - Opening Screen/audio_stream_player.gd" id="6_a7soe"]
 

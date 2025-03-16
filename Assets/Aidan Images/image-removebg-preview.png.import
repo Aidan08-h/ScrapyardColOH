@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bk1daiv4bgpvd"
-path="res://.godot/imported/Wendy PNG (no background).png-1cb67f1503de8b4cc660dc85ec8c1b91.ctex"
+uid="uid://u8brvdslj7sc"
+path="res://.godot/imported/image-removebg-preview.png-1c8eb2554097d063b3a7baf45d96697a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Wendy PNG (no background).png"
-dest_files=["res://.godot/imported/Wendy PNG (no background).png-1cb67f1503de8b4cc660dc85ec8c1b91.ctex"]
+source_file="res://Assets/Aidan Images/image-removebg-preview.png"
+dest_files=["res://.godot/imported/image-removebg-preview.png-1c8eb2554097d063b3a7baf45d96697a.ctex"]
 
 [params]
 
