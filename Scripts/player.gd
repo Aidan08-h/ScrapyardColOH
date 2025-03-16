@@ -10,6 +10,9 @@ var height
 var pos
 signal health_changed
 
+func _enter_tree() -> void:
+	set_multiplayer_authority(int(str(name)))
+
 func _ready() -> void:
 	height = $CollisionShape2D.shape.height
 	pos = $CollisionShape2D.position
@@ -35,6 +38,8 @@ func crouch():
 	$Hurtbox/Hurt.position.y = crouch_pos
 	
 func _physics_process(delta: float) -> void:
+	if !is_multiplayer_authority():
+		return
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += gravity * delta
