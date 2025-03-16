@@ -1,0 +1,130 @@
+[gd_scene load_steps=7 format=3 uid="uid://dftb0j1hwf0a2"]
+
+[ext_resource type="Script" uid="uid://dgysie5bsw4e0" path="res://Code - Opening Screen/start_scene.gd" id="1_0spq4"]
+[ext_resource type="Texture2D" uid="uid://cu2jmpn14ew8w" path="res://Shaun PNG (no background).png" id="2_crg2s"]
+[ext_resource type="Texture2D" uid="uid://crmrv5qiy4f58" path="res://Aidan PNG (no background).png" id="3_e5juq"]
+[ext_resource type="Texture2D" uid="uid://bk1daiv4bgpvd" path="res://Wendy PNG (no background).png" id="4_a7soe"]
+[ext_resource type="AudioStream" uid="uid://d0tg1bn3do40g" path="res://Kyle Preston - The Mystics.mp3" id="5_e5juq"]
+[ext_resource type="Script" uid="uid://0d7k6kgupceh" path="res://Code - Opening Screen/audio_stream_player.gd" id="6_a7soe"]
+
+[node name="StartScene" type="Control"]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_0spq4")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 165.0
+offset_right = 649.0
+offset_bottom = 570.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 107
+
+[node name="Shaun" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 41
+text = "Shaun"
+
+[node name="Aidan" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Aidan"
+
+[node name="Wendy" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Wendy"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 116.0
+theme_override_font_sizes/font_size = 27
+text = "Welcome to the Scrapyard Showdown! Choose your Champion!"
+alignment = 1
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 0
+offset_left = 193.0
+offset_top = 165.0
+offset_right = 398.0
+offset_bottom = 228.0
+text = "Shaun: 15 Attack, 15 Heal"
+alignment = 1
+expand_to_text_length = true
+
+[node name="LineEdit3" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 193.0
+offset_top = 339.0
+offset_right = 399.0
+offset_bottom = 393.0
+text = "Aidan: 25 Attack, 5 Heal"
+alignment = 1
+
+[node name="LineEdit4" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 508.0
+offset_right = 404.0
+offset_bottom = 565.0
+text = "Wendy: 10 Attack, 15 Heal"
+alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 793.0
+offset_top = 183.0
+offset_right = 1069.0
+offset_bottom = 264.0
+text = "Sir Shaun of Bummington is brave, but foolish. Pick him if you want to fight, but live another day."
+horizontal_alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 797.0
+offset_top = 351.0
+offset_right = 1077.0
+offset_bottom = 434.0
+text = "Sir Aidan of Scrapbottom is a Juggernaut, feared in combat for his might. Hit and don't get hit."
+horizontal_alignment = 1
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 819.0
+offset_top = 505.0
+offset_right = 1051.0
+offset_bottom = 604.0
+text = "Dame Wendy is smart, and knows fighting is foolish. If you share the same sentiment, pick her."
+horizontal_alignment = 1
+
+[node name="ShaunSpr" type="Sprite2D" parent="."]
+position = Vector2(717, 228)
+scale = Vector2(0.534682, 0.440476)
+texture = ExtResource("2_crg2s")
+
+[node name="AidanSpr" type="Sprite2D" parent="."]
+position = Vector2(706, 366)
+scale = Vector2(0.451299, 0.37013)
+texture = ExtResource("3_e5juq")
+
+[node name="WendySpr" type="Sprite2D" parent="."]
+position = Vector2(700, 511)
+scale = Vector2(0.646104, 0.563853)
+texture = ExtResource("4_a7soe")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_e5juq")
+autoplay = true
+script = ExtResource("6_a7soe")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Shaun" to="." method="_on_shaun_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Aidan" to="." method="_on_aidan_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Wendy" to="." method="_on_wendy_pressed"]

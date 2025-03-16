@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d0tg1bn3do40g"
+path="res://.godot/imported/Kyle Preston - The Mystics.mp3-b52b6936d47634e03749d19bd1f8607e.mp3str"
+
+[deps]
+
+source_file="res://Kyle Preston - The Mystics.mp3"
+dest_files=["res://.godot/imported/Kyle Preston - The Mystics.mp3-b52b6936d47634e03749d19bd1f8607e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
