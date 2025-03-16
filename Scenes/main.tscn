@@ -37,12 +37,18 @@ shape = SubResource("RectangleShape2D_kry3j")
 [node name="Sprite2D" type="Sprite2D" parent="Hurtbox"]
 texture = ExtResource("3_jjvhh")
 
-[node name="Background" type="Sprite2D" parent="."]
+[node name="Level" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(-24, -556)
 scale = Vector2(1.4, 1.4)
 texture = ExtResource("4_jjvhh")
 offset = Vector2(21, 337)
+
+[node name="SpawnPoint" type="Marker2D" parent="Level"]
+position = Vector2(-900, 709.286)
+
+[node name="SpawnPoint2" type="Marker2D" parent="Level"]
+position = Vector2(924.286, 697.143)
 
 [node name="UI" type="CanvasLayer" parent="."]
 follow_viewport_enabled = true
