@@ -19,6 +19,10 @@ config/icon="res://Assets/icon.svg"
 
 project/assembly_name="New Game Project"
 
+[global_group]
+
+Hitboxes=""
+
 [input]
 
 move_left={
