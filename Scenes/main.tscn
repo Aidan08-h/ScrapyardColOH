@@ -1,15 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bslthwjceyh71"]
+[gd_scene load_steps=5 format=3 uid="uid://bslthwjceyh71"]
 
 [ext_resource type="Script" uid="uid://dsrl0n27fkpfn" path="res://Scripts/game.gd" id="1_kry3j"]
-[ext_resource type="Script" uid="uid://cy5nl84e2heht" path="res://Scripts/hurtBox.gd" id="2_8gbba"]
-[ext_resource type="Texture2D" uid="uid://blsslniujbqfl" path="res://Assets/Aidan Images/aidan.png" id="3_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://dftb0j1hwf0a2" path="res://Scenes/OpeningScreen.tscn" id="3_8gbba"]
 [ext_resource type="Texture2D" uid="uid://bm13htpqxbn71" path="res://Assets/Background.jpg" id="4_jjvhh"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_7dm0k"]
 distance = -1.0
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kry3j"]
-size = Vector2(108, 386)
 
 [node name="Main" type="Node"]
 script = ExtResource("1_kry3j")
@@ -24,18 +20,6 @@ position = Vector2(3, 479)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_7dm0k")
-
-[node name="Hurtbox" type="Area2D" parent="."]
-position = Vector2(29, 242)
-script = ExtResource("2_8gbba")
-metadata/_custom_type_script = "uid://cy5nl84e2heht"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
-position = Vector2(-18, 36)
-shape = SubResource("RectangleShape2D_kry3j")
-
-[node name="Sprite2D" type="Sprite2D" parent="Hurtbox"]
-texture = ExtResource("3_jjvhh")
 
 [node name="Background" type="Sprite2D" parent="."]
 z_index = -1
@@ -81,3 +65,9 @@ text = "Join"
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
 _spawnable_scenes = PackedStringArray("uid://dskhkmjlpljku")
 spawn_path = NodePath("..")
+
+[node name="StartScene" parent="." instance=ExtResource("3_8gbba")]
+offset_left = -543.0
+offset_top = -92.0
+offset_right = -503.0
+offset_bottom = -52.0
